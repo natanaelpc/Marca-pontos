@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcador de Vôlei</title>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaQuerry.css">
+</head>
+<body>
+
+<main>
+    <section style="background-color: #077dc8;">
+        <div class="team" id="teamA">
+            <h2>
+                <input type="text" id="teamAName" value="Time A"/>
+            </h2>
+            <h3 id="scoreA"></h3>
+            <button onclick="addPoint('A')" class="buttonAdd">Adicionar Ponto</button>
+            <button onclick="voltarPonto('A')" class="buttonVol">Voltar Ponto</button>
+        </div>
+    </section>
+
+    <section style="background-color: #fb1010;">
+        <div class="team" id="teamB">
+            <h2>
+                <input type="text" id="teamBName" value="Time B"/>
+            </h2>
+            <h3 id="scoreB"></h3>
+            <button onclick="addPoint('B')" class="buttonAdd">Adicionar Ponto</button>
+            <button onclick="voltarPonto('B')" class="buttonVol">Voltar Ponto</button>
+        </div>
+    </section>
+</main>
+
+<div class="message" id="message"></div>
+
+<script>
+    let pointsA = 0;
+    let pointsB = 0;
+    scoreA.innerText = pointsA;
+    scoreB.innerText = pointsB;
+
+    function teamA(){
+        return teamAName.value; 
+    }
+
+    function teamB(){
+        return teamBName.value; 
+    }
+
+    function addPoint(team) {
+        if (team === 'A') {
+            pointsA++;
+            scoreA.innerText = pointsA;
+        } else {
+            pointsB++;
+            scoreB.innerText = pointsB;
+        }
+    }
+
+    function voltarPonto(team) {
+        if (team === 'A') {
+            pointsA--;
+            if (pointsA < 0) {
+                alert("[ATENÇÃO] Não existe pontos negativos");
+                pointsA = 0;
+            }
+            scoreA.innerText = pointsA;
+        } else {
+            pointsB--;
+            if (pointsB < 0) {
+                alert("[ATENÇÃO] Não existe pontos negativos");
+                pointsB = 0;
+            }
+            scoreB.innerText = pointsB;
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+@media screen and (max-width: 450px){
+    input{
+        width: 140px;
+    }
+
+    button{
+        margin-top: 15px;
+    }
+
+    h3#scoreA, h3#scoreB{
+        font-size: 13em;
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-height: 900px) {
+    h3#scoreA, h3#scoreB{
+        font-size: 13em;
+        margin: 0px;
+    }
+
+    .buttonAdd,.buttonVol{
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-height: 380px) {
+    h3#scoreA, h3#scoreB{
+        font-size: 10em;
+        margin: 0px;
+    }
+
+    .buttonAdd,.buttonVol{
+        padding: 8px;
+    }
+}

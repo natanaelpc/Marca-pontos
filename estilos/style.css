@@ -1,0 +1,79 @@
+body, html{
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f0f0f0;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+section{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team {
+    text-align: center;
+    border-radius: 8px;
+    padding-top: 8.6%;
+    padding-bottom: 8.6%;
+}
+
+input{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+h3#scoreA, h3#scoreB{
+    font-size: 16em;
+    margin: 5px;
+}
+
+button{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.buttonAdd{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 12px;
+    color: white;
+    background-color: #242233;
+}
+
+.buttonVol{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 12px;
+    color: white;
+    background-color: #292733;
+}
+
+.buttonReset{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 12px;
+    color: white;
+    background-color: #43424D;
+}
+
+.message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: green;
+}
